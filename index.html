@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pejsci!</title>
-        <meta charset='utf-8'>
-        <meta name="viewreport" content="width=device-widht, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <style>
+<head>
+    <title>Pejsci!</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
         body {
             background-color: #6e9cf7;
             color: white;
-            font-family: Ariel, sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Horizontální zarovnání na střed */
+            align-items: center;    /* Vertikální zarovnání na střed */
+            height: 100vh;          /* Výška stránky pokrývá celé okno */
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #4a7ae6;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #3a68c2;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .content {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1, h2, h4 {
+            margin: 10px 0;
+        }
+        .sidebar p {
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
         }
     </style>
-    </head>
-    <body>
-        <h1>Zvířata</h1>
-        <h2>Čtyřnožci</h2>
-        <p>Nemáte rádi zvířata?!<p>
-        <p>Máte rádi čtyřnohá zvířata?<p>
-        <h2>PES</h2>
-          <h4>Pejsi jsou roztomilí<sup>2</sup>
-        <p>Pejsci jsou <strong>věrní a oddaní společníci</strong>, kteří lidem <u>přinášejí radost, lásku a mnoho nezapomenutelných okamžiků</u>. <br>
-        Každý pes má svou jedinečnou osobnost – někteří jsou <strong>hraví a energičtí</strong>, jiní <mark>klidní a mazliví.</mark> <br>
-        Pejsci se odjakživa osvědčují jako společníci dětí i dospělých, pomáhají lidem jako asistenti <i>nebo zachraňují životy jako záchranáři.</i><br>
-        Jsou skvělými přáteli, kteří nás učí trpělivosti, věrnosti a bezpodmínečné lásce.<br> Pijí hodně H<sub>2</sub>O</p>
-    
-        <img src="dog.jpg" alt="velmi vtipný meme pejska" width="300" title="To je ale velmi roztomilý pejsek!">
-    </body>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Reklamy</h2>
+            <p><strong>Super hračky pro psy!</strong></p>
+            <p>Objevte nejnovější hračky, které zabaví vašeho pejska na celé hodiny!</p>
+            <p><strong>Kvalitní krmivo</strong></p>
+            <p>Dopřejte svému pejskovi jen to nejlepší. Vyzkoušejte náš výběr kvalitního krmiva.</p>
+        </div>
+        
+        <div class="content">
+            <h1>Zvířata</h1>
+            <h2>Čtyřnožci</h2>
+            <p>Nemáte rádi zvířata?!</p>
+            <p>Máte rádi čtyřnohá zvířata?</p>
+            <h2>PES</h2>
+            <h4>Pejsi jsou roztomilí<sup>2</sup></h4>
+            <p>
+                Pejsci jsou <strong>věrní a oddaní společníci</strong>, kteří lidem 
+                <u>přinášejí radost, lásku a mnoho nezapomenutelných okamžiků</u>. <br>
+                Každý pes má svou jedinečnou osobnost – někteří jsou <strong>hraví a energičtí</strong>, 
+                jiní <mark>klidní a mazliví.</mark> <br>
+                Pejsci se odjakživa osvědčují jako společníci dětí i dospělých, pomáhají lidem jako asistenti 
+                <i>nebo zachraňují životy jako záchranáři.</i><br>
+                Jsou skvělými přáteli, kteří nás učí trpělivosti, věrnosti a bezpodmínečné lásce.<br> 
+                Pijí hodně H<sub>2</sub>O.
+            </p>
+            <img src="dog.jpg" alt="velmi vtipný meme pejska" width="300" title="To je ale velmi roztomilý pejsek!">
+        </div>
+        
+        <div class="sidebar">
+            <h2>Reklamy</h2>
+            <p><strong>Stylové oblečky pro psy!</strong></p>
+            <p>Udržte vašeho pejska v teple a stylu s naší nabídkou oblečků.</p>
+            <p><strong>Pelíšky pro pejsky</strong></p>
+            <p>Poskytněte svému mazlíčkovi pohodlí s našimi pelíšky pro psy.</p>
+        </div>
+    </div>
+</body>
 </html>
